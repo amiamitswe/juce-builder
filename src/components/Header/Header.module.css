@@ -1,0 +1,35 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 0.1rem solid #535353;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 6rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header_logo,
+.header_user {
+  height: 4rem;
+  width: 4rem;
+  background-color: #535353;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.header_user_wrap span {
+  margin-left: 1rem;
+}

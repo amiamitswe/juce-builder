@@ -1,0 +1,44 @@
+/* .main_juce-builder */
+.main_juce-builder {
+  width: 32rem;
+  margin-top: 4rem;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.juce_title {
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.juce_meker-controll {
+  margin: 4rem 0;
+
+  @include respond(phone) {
+    margin: 3rem 0 4rem;
+  }
+}
+
+.add-to-cart {
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
+  border: none;
+  background-color: green;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 0.6rem darkgreen;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,55 @@
+.juce_select {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.juce_select:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.quantity {
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.btn {
+  height: 2.3rem;
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  line-height: 2rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding-bottom: 0.1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 1rem #483b3b;
+  box-shadow: 0 0 1rem #483b3b;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:not(:first-child) {
+  margin-left: 1.3rem;
+}
+
+.plus {
+  background-color: green;
+}
+
+.minus {
+  background-color: red;
+}

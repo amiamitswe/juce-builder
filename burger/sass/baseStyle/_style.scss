@@ -1,0 +1,83 @@
+/* Common */
+.container {
+  @include customWidthCenter ($container-width);
+
+  @include respond (tab_port) {
+    @include customWidthCenter ($w-100);
+  }
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.w-100 {
+  width: $w-100;
+}
+
+.h-100 {
+  height: $h-100;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-iblock {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-jutify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1 100%;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.img-res {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.juce_item {
+  border-radius: 10rem;
+  height: 3.5rem;
+  width: 100%;
+  margin: 0 auto .5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $body-bg-color;
+  text-transform: uppercase;
+}

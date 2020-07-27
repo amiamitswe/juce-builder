@@ -1,0 +1,36 @@
+.suger {
+  background-image: url(../images/dot.jpg);
+  color: $color-black !important;
+}
+.mango {
+  background-color: orange;
+}
+
+.strawberry {
+  background-color: #cc533d;
+}
+
+.orange {
+  background-color: #e9a034;
+}
+
+.lemon {
+  background-image: url(../images/lemon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-black !important;
+  height: 15rem !important;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+
+.lychee {
+  background-color: #f15141;
+}
+
+.solt {
+  background-color: rgb(95, 231, 197);
+}

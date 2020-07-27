@@ -1,0 +1,9 @@
+.juce_meker_controll {
+  margin: 4rem 0;
+}
+
+@media only screen and (max-width: 47.94em) {
+  .juce_meker_controll {
+    margin: 3rem 0 4rem;
+  }
+}

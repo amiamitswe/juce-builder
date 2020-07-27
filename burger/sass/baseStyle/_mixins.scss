@@ -1,0 +1,56 @@
+// MEDIA QUERY MANAGER
+// 0 - 320px: phone_xs
+// 321 - 360: phone_s
+// 361 - 767px: phone
+// 767 - 900px: tab-portrait
+// 900 - 1200px: tab-landscape
+// [1200 - 1800] is regular style apply
+
+// BREAKPOINTS ARGUEMENT CHOICES
+// - phone_xs
+// - phone_s
+// - phone
+// - tab_port
+// - tab_land
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone_xs {
+    @media only screen and (max-width: $phone_xs ) { @content }; //320px
+  }
+
+  @if $breakpoint == phone_s {
+    @media only screen and (max-width: $phone_s ) { @content }; //260px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $phone ) { @content }; //767px
+  }
+
+  @if $breakpoint == tab_port {
+    @media only screen and (max-width: $tab_port ) { @content }; //900 px
+  }
+
+  @if $breakpoint == tab_land {
+    @media only screen and (max-width: $tab_land ) { @content }; //1200px
+  }
+}
+
+
+// content-center
+@mixin centerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+// customWidthCenter
+@mixin customWidthCenter ($width) {
+  max-width: $width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}

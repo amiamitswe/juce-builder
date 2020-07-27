@@ -1,0 +1,40 @@
+/* juce_glass */
+.juce_glass {
+  min-height: 57rem;
+  width: 31rem;
+  border-bottom: 0.5rem solid #6c777a38;
+  border-left: 0.5rem solid #6c777a38;
+  border-right: 0.5rem solid #6c777a38;
+  background-color: #dbe1e338;
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  position: relative;
+}
+
+.juce_glass::before {
+  position: absolute;
+  content: "";
+  width: 110%;
+  border-top: 0.5rem solid #6c777a38;
+  top: -0.1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 47.94em) {
+  .juce_glass {
+    width: 100%;
+  }
+}

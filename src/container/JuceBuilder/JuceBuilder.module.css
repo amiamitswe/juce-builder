@@ -1,0 +1,17 @@
+/* main */
+.main {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-bottom: 0.1rem solid #535353;
+  padding: 3rem 1rem;
+}
+
+@media only screen and (max-width: 47.94em) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+  }
+}

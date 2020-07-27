@@ -1,0 +1,44 @@
+/* main */
+.main {
+  justify-content: space-around;
+  border-bottom: 0.1rem solid $color-gray-1;
+  padding: 3rem 1rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+  }
+}
+
+/* juce_glass */
+.juce_glass {
+  min-height: 57rem;
+  width: 31rem;
+  border-bottom: 0.5rem solid #6c777a38;
+  border-left: 0.5rem solid #6c777a38;
+  border-right: 0.5rem solid #6c777a38;
+  background-color: #dbe1e338;
+
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-bottom-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 110%;
+    border-top: 0.5rem solid #6c777a38;
+    top: -.1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
