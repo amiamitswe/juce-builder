@@ -5,19 +5,17 @@ import classes from './JuceBuilder.module.css';
 
 class JuceBuilder extends Component {
   state = {
-    juceItems: {
-      strawberry: 200,
-      orange: 100,
-      lychee: 150,
-      mango: 120,
-      solt: 10,
-    },
+    juceItems: {},
     totalPrice: 0,
     itemCount: [],
+    display: 'none',
   };
 
   componentDidMount = () => {
     console.log('componentDidMount');
+    fetch('https://react-project-4817f.firebaseio.com/juce.json')
+      .then((response) => response.json())
+      .then((responseData) => this.setState({ juceItems: responseData }));
   };
 
   componentDidUpdate = () => {
@@ -53,8 +51,16 @@ class JuceBuilder extends Component {
     }
   };
 
+  showModalHandler = () => {
+    this.setState({ display: 'block' });
+  };
+
+  closeModalHandler = () => {
+    this.setState({ display: 'none' });
+  };
+
   render() {
-    const { juceItems, totalPrice, itemCount } = this.state;
+    const { juceItems, totalPrice, itemCount, display } = this.state;
     return (
       <div className={[classes.main, 'd-flex'].join(' ')}>
         <Juce itemCount={itemCount} />
@@ -64,6 +70,9 @@ class JuceBuilder extends Component {
           itemCount={itemCount}
           addItemHandler={this.addItemHandler}
           removeItemHandler={this.removeItemHandler}
+          display={display}
+          showModalHandler={this.showModalHandler}
+          closeModal={this.closeModalHandler}
         />
       </div>
     );

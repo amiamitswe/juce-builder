@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './JuiceFlavours.module.css';
 
 const JuiceFlavours = ({ itemCount }) => {
-  // console.log(itemCount);
   return (
     <div className={classes.juice_flavours}>
       <div className={[classes.suger, 'juce_item'].join(' ')}>suger</div>
@@ -15,6 +14,7 @@ const JuiceFlavours = ({ itemCount }) => {
           {itme}
         </div>
       ))}
+      <div className={[classes.solt, 'juce_item'].join(' ')}>Solt</div>
       <div className={[classes.lemon, 'juce_item'].join(' ')}>lemon</div>
     </div>
   );

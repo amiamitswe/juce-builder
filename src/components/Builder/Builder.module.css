@@ -1,13 +1,17 @@
 /* .main_juce-builder */
 .main_juce_builder {
-  width: 32rem;
-  margin-top: 4rem;
+  width: 45rem;
+  background: #eee;
+  padding: 5rem;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #00000024;
 }
 
 @media only screen and (max-width: 47.94em) {
   .main_juce_builder {
     width: 100%;
     margin-top: 2rem;
+    padding: 3rem;
   }
 }
 
@@ -39,4 +43,40 @@
 
 .add_to_cart:focus {
   outline: none;
+}
+
+.add_to_cart:disabled {
+  cursor: not-allowed;
+  background-color: rgb(14, 53, 35);
+}
+
+.add_to_cart:disabled:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.payment {
+  font-family: rift, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  background-color: green;
+  color: #fff;
+  border-color: #28a745;
+  border: 1px solid transparent;
+  display: block;
+  margin: 50px auto 0;
+  width: 80%;
+  padding: 10px 0;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.payment:hover {
+  -webkit-box-shadow: 0 0 0.6rem darkgreen;
+  box-shadow: 0 0 0.6rem darkgreen;
+  cursor: pointer;
+}
+.modal {
+  font-size: 2rem;
 }

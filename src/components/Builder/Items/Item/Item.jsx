@@ -4,7 +4,7 @@ import classes from './Item.module.css';
 
 const Item = ({ item, itemCount, addItemHandler, removeItemHandler }) => {
   const itemCountBy = countBy(itemCount);
-  // console.log(itemCountBy);
+
   const capitalize = (word) =>
     word[0].toUpperCase() + word.slice(1).toLowerCase();
   return (
@@ -15,6 +15,7 @@ const Item = ({ item, itemCount, addItemHandler, removeItemHandler }) => {
       </div>
       <div className={classes.juce_buttons}>
         <button
+          disabled={itemCountBy[item] >= 5}
           type="button"
           onClick={() => addItemHandler(item)}
           className={[classes.btn, classes.plus].join(' ')}
@@ -22,6 +23,7 @@ const Item = ({ item, itemCount, addItemHandler, removeItemHandler }) => {
           +
         </button>
         <button
+          disabled={!(itemCountBy[item] >= 0)}
           type="button"
           onClick={() => removeItemHandler(item)}
           className={[classes.btn, classes.minus].join(' ')}

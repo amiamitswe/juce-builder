@@ -38,6 +38,18 @@
   background-color: #5fe7c5;
 }
 
+.banana {
+  background-color: #aaaa59;
+}
+
+.dragon {
+  background-color: lightcoral;
+}
+
+.papaya {
+  background-color: yellowgreen;
+}
+
 .juice_flavours {
   display: -webkit-box;
   display: -ms-flexbox;
